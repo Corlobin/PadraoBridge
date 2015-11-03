@@ -27,25 +27,22 @@ public abstract class AbstractEngine implements Engine {
 
     public void start() {
         running = true;
-        System.out.println("Engine started");
+        System.out.println("Motor iniciado");
     }
     public void stop() {
         running = false;
         power = 0;
-        System.out.println("Engine stopped");
+        System.out.println("Motor parado");
         
     }
     public void incresePower(){
-        if(running && (power < 10)){
-            power++;
-            System.out.println("Engine power increased to " + power);
-        }      
+        System.out.println("Motor  " + power);
+              
     }
     public void decreasePower() {
-        if(running && (power > 10)){
-            power--;
-            System.out.println("Engine power decreased to " + power);
-        }        
+        System.out.println("Motor  " + power);
+        power--;
+                
     }
     
     public int getSize() {
